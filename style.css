@@ -1,0 +1,260 @@
+/* Reset básico */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial;
+}
+
+/* Corpo do site */
+body{
+    background:#050505;
+    color:white;
+}
+
+/* Cabeçalho */
+header{
+    text-align:center;
+    padding:40px;
+    border-bottom:1px solid #222;
+}
+
+/* Título principal */
+header h1{
+    color:#9d4edd;
+    margin-bottom:20px;
+}
+
+/* Botão do admin */
+.btn-admin{
+    text-decoration:none;
+    background:#9d4edd;
+    color:white;
+    padding:10px 20px;
+    border-radius:8px;
+}
+
+/* Área dos cards */
+.container{
+
+    width:1200px;
+    max-width:95%;
+
+    margin:40px auto;
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(auto-fit, minmax(320px,1fr));
+
+    gap:30px;
+}
+
+/* Card do jogo */
+.card{
+
+    background:#111;
+
+    border:1px solid #333;
+
+    border-radius:10px;
+
+    overflow:hidden;
+
+    transition:0.3s;
+}
+
+/* Efeito hover */
+.card:hover{
+    transform:translateY(-5px);
+    border-color:#9d4edd;
+}
+
+/* Imagem do card */
+.card img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+}
+
+/* Conteúdo interno */
+.conteudo{
+    padding:20px;
+}
+
+/* Parte superior do card */
+.topo-card{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    margin-bottom:15px;
+}
+
+/* Nome do jogo */
+.topo-card h2{
+    color:#9d4edd;
+    font-size:22px;
+}
+
+/* Ano do jogo */
+.topo-card span{
+
+    background:#222;
+
+    padding:5px 10px;
+
+    border-radius:5px;
+}
+
+/* Texto da descrição */
+.card p{
+
+    color:#ccc;
+
+    line-height:1.5;
+
+    margin-bottom:20px;
+}
+
+/* Informações adicionais */
+.info{
+    margin-bottom:10px;
+}
+
+/* Nota */
+.nota{
+    color:#00b4ff;
+    font-weight:bold;
+}
+
+/* Rodapé */
+footer{
+
+    text-align:center;
+
+    padding:30px;
+
+    border-top:1px solid #222;
+
+    margin-top:50px;
+}
+
+/* Área do formulário */
+.formulario{
+
+    width:500px;
+
+    max-width:95%;
+
+    margin:40px auto;
+}
+
+/* Formulário */
+form{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:15px;
+}
+
+/* Inputs e textarea */
+input,
+textarea{
+
+    padding:15px;
+
+    border:none;
+
+    background:#111;
+
+    color:white;
+
+    border:1px solid #333;
+
+    border-radius:8px;
+}
+
+/* Botão */
+button{
+
+    padding:15px;
+
+    background:#9d4edd;
+
+    color:white;
+
+    border:none;
+
+    border-radius:8px;
+
+    cursor:pointer;
+
+    font-size:16px;
+}
+
+/* Área da lista admin */
+.lista-admin{
+
+    width:1200px;
+
+    max-width:95%;
+
+    margin:50px auto;
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(auto-fit, minmax(250px,1fr));
+
+    gap:20px;
+}
+
+/* Card admin */
+.admin-card{
+
+    background:#111;
+
+    border:1px solid #333;
+
+    border-radius:10px;
+
+    padding:15px;
+}
+
+/* Imagem admin */
+.admin-card img{
+
+    width:100%;
+
+    height:150px;
+
+    object-fit:cover;
+
+    border-radius:8px;
+
+    margin-bottom:10px;
+}
+
+/* Botão deletar */
+.delete-btn{
+
+    display:inline-block;
+
+    margin-top:10px;
+
+    background:red;
+
+    color:white;
+
+    padding:10px;
+
+    border-radius:8px;
+
+    text-decoration:none;
+}
